@@ -1,0 +1,22 @@
+# Diretórios
+node_modules/
+dist/
+
+# Arquivos de configuração
+.env
+
+# Logs
+logs/
+*.log
+
+# Arquivos gerados
+coverage/
+build/
+
+# Dependências locais
+/.pnp/
+.pnp.js
+
+# Arquivos de ambiente específicos do sistema operacional
+.DS_Store
+Thumbs.db
