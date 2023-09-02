@@ -1,3 +1,5 @@
+import { pathsToModuleNameMapper } from "ts-jest";
+
 export default {
   bail: true,
   clearMocks: true,
@@ -11,4 +13,10 @@ export default {
   preset: "ts-jest",
   testEnvironment: "node",
   testMatch: ["**/*.spec.ts"],
+  moduleNameMapper: pathsToModuleNameMapper(
+    {
+      "@modules/*": ["modules/*"]
+    },
+    { prefix: "<rootDir>/src" }
+  ),
 };
