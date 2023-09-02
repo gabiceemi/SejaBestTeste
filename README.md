@@ -48,10 +48,15 @@ Para iniciar o projeto localmente, siga estas etapadas:
 
    ```bash
    docker-compose up
-   
-4. O servidor estará em execução em http://localhost:3000
 
-5. Execute os testes com o seguinte comando:
+4. Para fazer as migrações das tabelas:
 
    ```bash
-   npm test
+   npm run typeorm migration:run
+   
+5. O servidor estará em execução em http://localhost:3000
+
+6. Execute os testes com o seguinte comando:
+
+   ```bash
+   npm run test
