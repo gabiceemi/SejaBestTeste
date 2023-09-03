@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import { CreatePessoaController } from "modules/pessoas/useCases/createPessoa/CreatePessoaController";
-import { FindPessoaController } from "modules/pessoas/useCases/findPessoa/FindPessoaController";
+import { CreatePessoaController } from "@modules/pessoas/useCases/createPessoa/CreatePessoaController";
+import { FindPessoaController } from "@modules/pessoas/useCases/findPessoa/FindPessoaController";
 
 const createPessoaController = new CreatePessoaController();
 const findPessoaController = new FindPessoaController();

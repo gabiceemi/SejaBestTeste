@@ -1,6 +1,6 @@
 import { Repository, getRepository } from "typeorm";
 
-import { IFonesRepository } from "modules/fones/repositories/IFonesRepository";
+import { IFonesRepository } from "@modules/fones/repositories/IFonesRepository";
 import { Fone } from "../entities/Fone";
 
 export class FonesRepository implements IFonesRepository {

@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import { CreateFoneController } from "modules/fones/useCases/createFone/CreateFoneController";
-import { FindFoneController } from "modules/fones/useCases/findFone/FindFoneController";
-import { VerifyIsCelularController } from "modules/fones/useCases/verifyIsCelular/VerifyIsCelularController";
+import { CreateFoneController } from "@modules/fones/useCases/createFone/CreateFoneController";
+import { FindFoneController } from "@modules/fones/useCases/findFone/FindFoneController";
+import { VerifyIsCelularController } from "@modules/fones/useCases/verifyIsCelular/VerifyIsCelularController";
 
 const createFoneController = new CreateFoneController();
 const findFoneController = new FindFoneController();

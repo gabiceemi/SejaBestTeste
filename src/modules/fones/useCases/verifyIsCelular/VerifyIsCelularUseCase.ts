@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
-import { Fone } from "modules/fones/infra/entities/Fone";
-import { IFonesRepository } from "modules/fones/repositories/IFonesRepository";
+import { Fone } from "@modules/fones/infra/entities/Fone";
+import { IFonesRepository } from "@modules/fones/repositories/IFonesRepository";
 
 @injectable()
 export class VerifyIsCelularUseCase {
@@ -10,9 +10,9 @@ export class VerifyIsCelularUseCase {
     private fonesRepository: IFonesRepository
   ) {}
 
-  async execute(numero: string): Promise<Fone> {
+  async execute(numero: string): Promise<Fone | undefined> {
     const fone = await this.fonesRepository.isCelular(numero);
 
-    return fone;
+    return fone || undefined;
   }
 }

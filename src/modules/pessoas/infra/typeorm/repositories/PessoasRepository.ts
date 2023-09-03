@@ -1,6 +1,6 @@
 import { Repository, getRepository } from "typeorm";
 
-import { IPessoasRepository } from "modules/pessoas/repositories/IPessoasRepository";
+import { IPessoasRepository } from "@modules/pessoas/repositories/IPessoasRepository";
 import { Pessoa } from "../entities/Pessoa";
 
 export class PessoasRepository implements IPessoasRepository {

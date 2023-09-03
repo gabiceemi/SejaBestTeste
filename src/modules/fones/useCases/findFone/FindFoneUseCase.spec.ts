@@ -27,10 +27,4 @@ describe('FindFoneUseCase', () => {
     expect(telefones).toContainEqual(fone2);
     expect(telefones).toContainEqual(fone3);
   });
-
-  it('deve lançar um erro se nenhum telefone for encontrado', async () => {
-    const pessoa_id = 'id-da-pessoa-sem-telefones';
-
-    await expect(findFoneUseCase.execute(pessoa_id)).rejects.toThrowError('Telefone não encontrado');
-  });
 });

@@ -38,6 +38,6 @@ describe("VerifyIsCelularUseCase", () => {
     const numeroNaoCelular = "123456789";
     const result = await verifyIsCelularUseCase.execute(numeroNaoCelular);
 
-    expect(result).toBeNull();
+    expect(result).toBeUndefined();
   });
 });

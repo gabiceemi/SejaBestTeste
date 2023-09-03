@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
-import { Fone } from "modules/fones/infra/entities/Fone";
-import { IFonesRepository } from "modules/fones/repositories/IFonesRepository";
+import { Fone } from "@modules/fones/infra/entities/Fone";
+import { IFonesRepository } from "@modules/fones/repositories/IFonesRepository";
 
 @injectable()
 export class CreateFoneUseCase {
